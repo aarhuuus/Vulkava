@@ -3,6 +3,12 @@ import UnresolvedTrack from '../UnresolvedTrack';
 
 export abstract class AbstractQueue {
   /**
+   * Returns the list of songs in the queue
+   * @type {(Track | UnresolvedTrack)[]}
+   */
+  abstract get tracks(): Array<Track | UnresolvedTrack>;
+
+  /**
    * Gets the queue duration
    * @abstract
    * @type {number}
